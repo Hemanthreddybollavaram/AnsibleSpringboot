@@ -1,5 +1,5 @@
-FROM openjdk:17
-EXPOSE 8080
-ADD target/spring-boot-docker.jar spring-boot-docker
-ENTRYPOINT ["java", "-jar", "/spring-boot-docker.jar" ]
+FROM openjdk:11
+EXPOSE 8081
+ADD target/springboot-demo-0.0.1-SNAPSHOT.jar kubernetes
+ENTRYPOINT ["java", "-jar", "/springboot-demo-0.0.1-SNAPSHOT.jar" ]
 
